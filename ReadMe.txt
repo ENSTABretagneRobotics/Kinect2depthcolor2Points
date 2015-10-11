@@ -19,7 +19,6 @@ Replace polylist by triangles in the .dae and edit snap1.kml to change file name
 Open with Google Earth the .kml file (because of backface culling, some points of view might not be visible)...
 
 It should work with the following software :
-
 *** USER and DEVEL ***
 _ Windows 8 Professional 64 bit
 _ Microsoft Visual C++ 2012 Redistributable Package

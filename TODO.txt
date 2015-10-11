@@ -1,0 +1,4 @@
+
+conversion kinect meshlab puis dans google->générer kml automatiquement...
+kinect 2 x86?
+kinect 1 : field of view, resolution of each sensor (RGB, Depth, IR)?

@@ -230,5 +230,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="TODO.txt" />
   </ItemGroup>
 </Project>
