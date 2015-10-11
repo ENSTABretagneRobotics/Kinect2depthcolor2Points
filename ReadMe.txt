@@ -1,4 +1,11 @@
-During mission
+This folder contains a program used to generate a 3D reconstruction of a room using a Kinect 2 during euRathlon competitions.
+
+The principle is the following : 
+_ Using a third-party program, get several depth and color images (e.g. depth.png and color.png) from the Kinect 2 at known positions and orientations.
+_ Run Kinect2depthcolor2Points to convert those images in 3D points clouds files (e.g. depth.ply) or mesh-based files (e.g. depth.obj and depth.mtl). The program needs that the dimensions, zoom factors, etc. of the depth and color pictures are the same.
+_ Display the generated 3D files (e.g. depth0deg.ply, depth90deg.ply, depth180deg.ply, depth270deg.ply) in e.g. MeshLab. If several files are displayed in the same time, it should give a 3D reconstruction of the room.
+
+During a robot mission using UxVCtrl
 
 Press r on each window to start/stop video recording.
 In UxVCtrl, press P (the GUI needs focus) to take snapshots of all videos. Note the current orientation and position.
