@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="OSUtils">
+      <UniqueIdentifier>{4ab5ed1a-7db2-4ca8-ad73-5dbc03086141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions">
+      <UniqueIdentifier>{5788112c-544e-4434-a2aa-cc7bb4f8e758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions\Img">
+      <UniqueIdentifier>{8f1ac6b2-2631-47dc-a07c-27b3c960b7cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interval">
+      <UniqueIdentifier>{ec4b31cd-f896-4029-b398-c7bf5f7438c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="matrix_lib">
+      <UniqueIdentifier>{6d136ced-d5db-4172-8c7a-f54c7ae0fb5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSComputerRS232Port.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSCore.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSCriticalSection.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSEv.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSMisc.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSNet.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSSem.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSThread.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSTime.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSUtils\OSTimer.c">
+      <Filter>OSUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Extensions\Img\CvCore.c">
+      <Filter>Extensions\Img</Filter>
+    </ClCompile>
+    <ClCompile Include="..\interval\box.cpp">
+      <Filter>interval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\interval\iboolean.cpp">
+      <Filter>interval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\interval\imatrix.cpp">
+      <Filter>interval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\interval\interval.cpp">
+      <Filter>interval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\interval\rmatrix.cpp">
+      <Filter>interval</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\OSUtils\OSComputerRS232Port.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSCore.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSCriticalSection.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSEv.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSMisc.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSNet.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSSem.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSThread.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSTime.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSTimer.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSUtils\OSUtils.h">
+      <Filter>OSUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extensions\Img\AxisOptions.h">
+      <Filter>Extensions\Img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extensions\Img\CoordSystem.h">
+      <Filter>Extensions\Img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extensions\Img\CoordSystem2Img.h">
+      <Filter>Extensions\Img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extensions\Img\CoordSystemChg.h">
+      <Filter>Extensions\Img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extensions\Img\CvCore.h">
+      <Filter>Extensions\Img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interval\box.h">
+      <Filter>interval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interval\iboolean.h">
+      <Filter>interval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interval\imatrix.h">
+      <Filter>interval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interval\interval.h">
+      <Filter>interval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interval\rmatrix.h">
+      <Filter>interval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\jama_cholesky.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\jama_eig.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\jama_lu.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\jama_qr.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\jama_svd.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_array1d.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_array1d_utils.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_array2d.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_array2d_utils.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_array3d.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_array3d_utils.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_cmat.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array1d.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array1d_utils.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array2d.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array2d_utils.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array3d.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array3d_utils.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_i_refvec.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_math_utils.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_sparse_matrix_csr.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_stopwatch.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_subscript.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_vec.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\matrix_lib\tnt_version.h">
+      <Filter>matrix_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extensions\Img\CvKinect2SDKHook.h">
+      <Filter>Extensions\Img</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

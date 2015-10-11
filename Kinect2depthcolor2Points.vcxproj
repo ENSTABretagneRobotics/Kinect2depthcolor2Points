@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30A6807A-5214-4E51-9ECA-AAFA08F9F6D8}</ProjectGuid>
+    <RootNamespace>Kinect2depthcolor2Points</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Extensions\Img;..\OSUtils;..\interval;..\matrix_lib;.;..;$(SystemDrive)\OpenCV2.4.9\include;$(KINECTSDK20_DIR)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_DEBUG_WARNINGS;OPENCV249;ENABLE_CVKINECT2SDKHOOK;ENABLE_GETTIMEOFDAY_WIN32;DISABLE_TIMEZONE_STRUCT_REDEFINITION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>WinMM.lib;WS2_32.lib;opencv_core249d.lib;opencv_imgproc249d.lib;opencv_highgui249d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(KINECTSDK20_DIR)\Lib\x86;$(SystemDrive)\OpenCV2.4.9\x86\vc11\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Extensions\Img;..\OSUtils;..\interval;..\matrix_lib;.;..;$(SystemDrive)\OpenCV2.4.9\include;$(KINECTSDK20_DIR)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;OPENCV249;ENABLE_CVKINECT2SDKHOOK;ENABLE_GETTIMEOFDAY_WIN32;DISABLE_TIMEZONE_STRUCT_REDEFINITION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>WinMM.lib;WS2_32.lib;opencv_core249.lib;opencv_imgproc249.lib;opencv_highgui249.lib;IlmImf.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;Vfw32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(KINECTSDK20_DIR)\Lib\x86;$(SystemDrive)\OpenCV2.4.9\x86\vc11\staticlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\OSUtils\OSComputerRS232Port.c" />
+    <ClCompile Include="..\OSUtils\OSCore.c" />
+    <ClCompile Include="..\OSUtils\OSCriticalSection.c" />
+    <ClCompile Include="..\OSUtils\OSEv.c" />
+    <ClCompile Include="..\OSUtils\OSMisc.c" />
+    <ClCompile Include="..\OSUtils\OSNet.c" />
+    <ClCompile Include="..\OSUtils\OSSem.c" />
+    <ClCompile Include="..\OSUtils\OSThread.c" />
+    <ClCompile Include="..\OSUtils\OSTime.c" />
+    <ClCompile Include="..\OSUtils\OSTimer.c" />
+    <ClCompile Include="..\Extensions\Img\CvCore.c" />
+    <ClCompile Include="..\interval\box.cpp" />
+    <ClCompile Include="..\interval\iboolean.cpp" />
+    <ClCompile Include="..\interval\imatrix.cpp" />
+    <ClCompile Include="..\interval\interval.cpp" />
+    <ClCompile Include="..\interval\rmatrix.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Extensions\Img\CvKinect2SDKHook.h" />
+    <ClInclude Include="..\OSUtils\OSComputerRS232Port.h" />
+    <ClInclude Include="..\OSUtils\OSCore.h" />
+    <ClInclude Include="..\OSUtils\OSCriticalSection.h" />
+    <ClInclude Include="..\OSUtils\OSEv.h" />
+    <ClInclude Include="..\OSUtils\OSMisc.h" />
+    <ClInclude Include="..\OSUtils\OSNet.h" />
+    <ClInclude Include="..\OSUtils\OSSem.h" />
+    <ClInclude Include="..\OSUtils\OSThread.h" />
+    <ClInclude Include="..\OSUtils\OSTime.h" />
+    <ClInclude Include="..\OSUtils\OSTimer.h" />
+    <ClInclude Include="..\OSUtils\OSUtils.h" />
+    <ClInclude Include="..\Extensions\Img\AxisOptions.h" />
+    <ClInclude Include="..\Extensions\Img\CoordSystem.h" />
+    <ClInclude Include="..\Extensions\Img\CoordSystem2Img.h" />
+    <ClInclude Include="..\Extensions\Img\CoordSystemChg.h" />
+    <ClInclude Include="..\Extensions\Img\CvCore.h" />
+    <ClInclude Include="..\interval\box.h" />
+    <ClInclude Include="..\interval\iboolean.h" />
+    <ClInclude Include="..\interval\imatrix.h" />
+    <ClInclude Include="..\interval\interval.h" />
+    <ClInclude Include="..\interval\rmatrix.h" />
+    <ClInclude Include="..\matrix_lib\jama_cholesky.h" />
+    <ClInclude Include="..\matrix_lib\jama_eig.h" />
+    <ClInclude Include="..\matrix_lib\jama_lu.h" />
+    <ClInclude Include="..\matrix_lib\jama_qr.h" />
+    <ClInclude Include="..\matrix_lib\jama_svd.h" />
+    <ClInclude Include="..\matrix_lib\tnt.h" />
+    <ClInclude Include="..\matrix_lib\tnt_array1d.h" />
+    <ClInclude Include="..\matrix_lib\tnt_array1d_utils.h" />
+    <ClInclude Include="..\matrix_lib\tnt_array2d.h" />
+    <ClInclude Include="..\matrix_lib\tnt_array2d_utils.h" />
+    <ClInclude Include="..\matrix_lib\tnt_array3d.h" />
+    <ClInclude Include="..\matrix_lib\tnt_array3d_utils.h" />
+    <ClInclude Include="..\matrix_lib\tnt_cmat.h" />
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array1d.h" />
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array1d_utils.h" />
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array2d.h" />
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array2d_utils.h" />
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array3d.h" />
+    <ClInclude Include="..\matrix_lib\tnt_fortran_array3d_utils.h" />
+    <ClInclude Include="..\matrix_lib\tnt_i_refvec.h" />
+    <ClInclude Include="..\matrix_lib\tnt_math_utils.h" />
+    <ClInclude Include="..\matrix_lib\tnt_sparse_matrix_csr.h" />
+    <ClInclude Include="..\matrix_lib\tnt_stopwatch.h" />
+    <ClInclude Include="..\matrix_lib\tnt_subscript.h" />
+    <ClInclude Include="..\matrix_lib\tnt_vec.h" />
+    <ClInclude Include="..\matrix_lib\tnt_version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
