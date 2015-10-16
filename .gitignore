@@ -178,5 +178,8 @@ $RECYCLE.BIN/
 *.dae
 *.DAE
 !*snap1.kml
+TODO/
 !*ReadMe.txt
-!Release/Kinect2depthcolor2Points.exe
+!Release/
+Release/*
+!Release/*.exe
