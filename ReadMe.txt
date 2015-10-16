@@ -35,7 +35,7 @@ _ MeshLab 1.3.3
 _ Google Earth
 *** DEVEL ***
 _ Visual Studio 2012
-_ OpenCV 2.4.9
+_ OpenCV 2.4.9 (download http://www.ensta-bretagne.fr/lebars/Share/OpenCV2.4.9.zip and extract in C:)
 
 The following are required sources dependencies :  
 _ ..\OSUtils : useful functions.
