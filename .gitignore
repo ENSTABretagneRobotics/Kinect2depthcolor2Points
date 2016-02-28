@@ -8,8 +8,8 @@
 
 # Build results
 
-[Dd]ebug/
-[Rr]elease/
+[Dd]ebug*/
+[Rr]elease*/
 x64/
 build/
 [Bb]in/
@@ -178,8 +178,8 @@ $RECYCLE.BIN/
 *.dae
 *.DAE
 !*snap1.kml
+!Release*/
+Release*/*
+!Release*/*.exe
 TODO/
 !*ReadMe.txt
-!Release/
-Release/*
-!Release/*.exe
