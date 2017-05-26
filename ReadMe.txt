@@ -28,14 +28,14 @@ Open with Google Earth the .kml file (because of backface culling, some points o
 It should work with the following software :
 *** USER and DEVEL ***
 _ Windows 8 Professional 64 bit
-_ Microsoft Visual C++ 2012 Redistributable Package
+_ Microsoft Visual C++ 2012/2017 Redistributable Package
 _ Kinect v2 SDK
 _ IrfanView 4.28
 _ MeshLab 1.3.3
 _ Google Earth
 *** DEVEL ***
-_ Visual Studio 2012
-_ OpenCV 2.4.9 (download http://www.ensta-bretagne.fr/lebars/Share/OpenCV2.4.9.zip and extract in C:)
+_ Visual Studio 2012/2017
+_ OpenCV 2.4.9/2.4.13 (download http://www.ensta-bretagne.fr/lebars/Share/OpenCV2.4.13.zip and extract in C:)
 
 The following are required sources dependencies :  
 _ ..\OSUtils : useful functions.
