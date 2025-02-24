@@ -63,9 +63,6 @@
     <ClCompile Include="..\OSUtils\OSTimer.c">
       <Filter>OSUtils</Filter>
     </ClCompile>
-    <ClCompile Include="..\Extensions\Img\CvCore.c">
-      <Filter>Extensions\Img</Filter>
-    </ClCompile>
     <ClCompile Include="..\interval\box.cpp">
       <Filter>interval</Filter>
     </ClCompile>
@@ -126,9 +123,6 @@
       <Filter>Extensions\Img</Filter>
     </ClInclude>
     <ClInclude Include="..\Extensions\Img\CoordSystemChg.h">
-      <Filter>Extensions\Img</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Extensions\Img\CvCore.h">
       <Filter>Extensions\Img</Filter>
     </ClInclude>
     <ClInclude Include="..\interval\box.h">
@@ -225,6 +219,9 @@
       <Filter>matrix_lib</Filter>
     </ClInclude>
     <ClInclude Include="..\Extensions\Img\CvKinect2SDKHook.h">
+      <Filter>Extensions\Img</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extensions\Img\CvInc.h">
       <Filter>Extensions\Img</Filter>
     </ClInclude>
   </ItemGroup>
